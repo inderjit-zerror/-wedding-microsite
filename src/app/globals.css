@@ -104,6 +104,15 @@ p {
   background-color: #EFDFCB;
 }
 
+.imgQ1 {
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.img3d-wrapper {
+  perspective: 800px;
+}
 
 /* 
 

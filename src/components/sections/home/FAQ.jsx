@@ -106,16 +106,16 @@ export default function FAQ() {
 
         <div className="space-y-6 w-full">
           {faqs.map((question, index) => (
-            <div key={index} className="border-t border-white/40 pt-6  group">
+            <div key={index} className="border-t border-white/20 pt-6  group translate-0">
               {/* BUTTON */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="group w-full flex items-center justify-between text-left"
+                className="group w-full flex items-center justify-between text-left cursor-pointer"
               >
                 <span className="tracking-wide Font_YV text-[1.5rem]  max-sm:text-[1.1rem] md:text-base relative">
                   {question}
 
-                  <div className='w-0 h-px bg-white group-hover:w-full transition-all duration-200 ease-in'></div>
+                  
                 </span>
 
                 {/* ICON */}
@@ -151,10 +151,12 @@ export default function FAQ() {
                   {OPEN_TEXT}
                 </span>
               </div>
+
+              <div className='w-0 h-px bg-white group-hover:w-full absolute bottom-[-50%] left-0  transition-all duration-300 ease-in'></div>
             </div>
           ))}
 
-          <div className="border-t border-white/40" />
+          <div className="border-t border-white/20" />
         </div>
       </div>
     </section>

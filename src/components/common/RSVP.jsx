@@ -21,7 +21,7 @@ export default function RSVP() {
             </label>
             <input
               type="text"
-              className="w-full bg-transparent border-b border-[#B97241] focus:outline-none focus:border-black pb-2"
+              className="w-full bg-transparent border-b border-[#551301] focus:outline-none focus:border-black pb-2"
             />
              <div className="w-[0px] h-px bg-white group-hover:w-full absolute left-0 bottom-0 transition-all duration-500 ease-in-out"></div>
           </div>
@@ -33,7 +33,7 @@ export default function RSVP() {
             </label>
             <input
               type="email"
-              className="w-full bg-transparent border-b border-[#B97241] focus:outline-none focus:border-black pb-2"
+              className="w-full bg-transparent border-b border-[#551301] focus:outline-none focus:border-black pb-2"
             />
              <div className="w-[0px] h-px bg-white group-hover:w-full absolute left-0 bottom-0 transition-all duration-500 ease-in-out"></div>
           </div>
@@ -45,7 +45,7 @@ export default function RSVP() {
             </label>
             <input
               type="tel"
-              className="w-full bg-transparent border-b border-[#B97241] focus:outline-none focus:border-black pb-2"
+              className="w-full bg-transparent border-b border-[#551301] focus:outline-none focus:border-black pb-2"
             />
             <div className="w-[0px] h-px bg-white group-hover:w-full absolute left-0 bottom-0 transition-all duration-500 ease-in-out"></div>
           </div>
@@ -54,7 +54,7 @@ export default function RSVP() {
           <div className="pt-6">
             <button
               type="submit"
-              className="bg-[#B97241] text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-[#9e5a2e] cursor-pointer transition"
+              className="bg-[#551301] text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-[#551301] cursor-pointer transition"
             >
               Next
             </button>

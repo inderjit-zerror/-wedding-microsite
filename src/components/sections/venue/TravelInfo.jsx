@@ -12,51 +12,51 @@ const TravelInfo = () => {
   const row2 = useRef(null)
   const row3 = useRef(null)
 
-  // useGSAP(() => {
-  //   const createMarquee = (el, direction = 1) => {
-  //     const tl = gsap.timeline({
-  //       repeat: -1,
-  //       defaults: { ease: "none" }
-  //     })
+  useGSAP(() => {
+    const createMarquee = (el, direction = 1) => {
+      const tl = gsap.timeline({
+        repeat: -1,
+        defaults: { ease: "none" }
+      })
 
-  //     tl.fromTo(
-  //       el,
-  //       { xPercent: 0 },
-  //       {
-  //         xPercent: direction === 1 ? -50 : 50,
-  //         duration: 20,
-  //       }
-  //     )
+      tl.fromTo(
+        el,
+        { xPercent: 0 },
+        {
+          xPercent: direction === 1 ? -50 : 50,
+          duration: 20,
+        }
+      )
 
-  //     return tl
-  //   }
+      return tl
+    }
 
 
-  //   const tl1 = createMarquee(row1.current, 1)   // right
-  //   const tl2 = createMarquee(row2.current, -1)  // left
-  //   const tl3 = createMarquee(row3.current, 1)   // right
+    const tl1 = createMarquee(row1.current, 1)   // right
+    const tl2 = createMarquee(row2.current, -1)  // left
+    const tl3 = createMarquee(row3.current, 1)   // right
 
-  //   ScrollTrigger.create({
-  //     trigger: document.body,
-  //     start: "top top",
-  //     end: "bottom bottom",
-  //     onUpdate: (self) => {
-  //       const velocity = self.getVelocity()
-  //       const speed = gsap.utils.clamp(0.5, 4, Math.abs(velocity) / 300)
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => {
+        const velocity = self.getVelocity()
+        const speed = gsap.utils.clamp(0.5, 4, Math.abs(velocity) / 300)
 
-  //       tl1.timeScale(speed)
-  //       tl2.timeScale(speed)
-  //       tl3.timeScale(speed)
-  //     },
-  //     onStop: () => {
-  //       gsap.to([tl1, tl2, tl3], {
-  //         timeScale: 1,
-  //         duration: 0.6,
-  //         ease: "power3.out",
-  //       })
-  //     },
-  //   })
-  // }, [])
+        tl1.timeScale(speed)
+        tl2.timeScale(speed)
+        tl3.timeScale(speed)
+      },
+      onStop: () => {
+        gsap.to([tl1, tl2, tl3], {
+          timeScale: 1,
+          duration: 0.6,
+          ease: "power3.out",
+        })
+      },
+    })
+  }, [])
 
   return (
     <section className="relative COLOR_BG_RED py-32 px-6 overflow-hidden">
@@ -124,7 +124,7 @@ const TravelInfo = () => {
             View Location
           </div> */}
 
-           <button className="button mt-5  " style={{ backgroundColor: '#e3ad6b' }}>
+           <button className="button mt-5  " style={{ backgroundColor: '#EFDFCB' }}>
                                 <span className="button__icon-wrapper">
                                     <svg
                                         viewBox="0 0 14 15"
@@ -152,7 +152,8 @@ const TravelInfo = () => {
                                         ></path>
                                     </svg>
                                 </span>
-                                View Location
+                                <span className="text-[#551301]">View Location</span>
+                                
                             </button>
       </div>
     </section>

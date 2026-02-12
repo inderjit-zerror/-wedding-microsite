@@ -34,34 +34,38 @@ const Hearts = () => {
             opacity: 1,
             ease: 'none'
         })
+        TLH.to('.MainTrifer', {
+            opacity:0,
+            ease: 'none'
+        })
 
     }, [])
 
     // SM
-    useEffect(() => {
-        const TLH = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.heart_cont',
-                start: 'top top',
-                end: 'bottom bottom',
-                scrub: true,
-                // markers: true
-            }
-        })
-        TLH.to('.innderHerartCont2SM', {
-            gap: 200,
-        }, 'b1')
-        TLH.to('.TOPUPTEXTSM', {
-            opacity: 1,
-            scale: 1,
-            ease: 'none'
-        }, 'b1')
-    }, [])
+    // useEffect(() => {
+    //     const TLH = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: '.heart_cont',
+    //             start: 'top top',
+    //             end: 'bottom bottom',
+    //             scrub: true,
+    //             // markers: true
+    //         }
+    //     })
+    //     TLH.to('.innderHerartCont2SM', {
+    //         gap: 200,
+    //     }, 'b1')
+    //     TLH.to('.TOPUPTEXTSM', {
+    //         opacity: 1,
+    //         scale: 1,
+    //         ease: 'none'
+    //     }, 'b1')
+    // }, [])
 
 
     return (
         <div className='w-full h-[250vh] relative heart_cont '>
-            <div className='w-full h-screen overflow-hidden sticky flex flex-col max-sm:hidden justify-center top-0 left-0 COLOR_BG_RED COLOR_TEXT_CREAM uppercase'>
+            <div className='w-full h-screen MainTrifer overflow-hidden sticky flex flex-col max-sm:hidden justify-center top-0 left-0 COLOR_BG_RED COLOR_TEXT_CREAM uppercase'>
                 {/* 1 */}
                 <div className=' w-full innderHerartCont tlr  h-fit text-[8vw] leading-[8vw] Font_Q flex  gap-[10vw] justify-center'>
                     <h1>Two</h1>
@@ -87,7 +91,7 @@ const Hearts = () => {
 
 
                 <div className=' TOPUPTEXT absolute w-full h-screen overflow-hidden opacity-0  top-0 left-0 flex flex-col justify-center items-center'>
-                    <img src={`/imgs/SonalKush1.webp`} className='w-full h-full object-center object-cover' alt="img" />
+                    <img src={`/imgs/save2.webp`} className='w-full h-full object-cover object-bottom' alt="img" />
                 </div>
             </div>
 

@@ -164,7 +164,7 @@ const Destiny = () => {
             {/* Bg */}
             <img src={`/imgs/save2.webp`} className='w-full h-full object-cover object-bottom fixed top-0 left-0  z-[-1]' alt="BG-IMG" />
 
-            <div className='w-full h-fit COLOR_BG_CREAM flex flex-col px-[5vw] innderDestinyCont opacity-100 mt-[100vh] max-sm:pt-[10vh] max-sm:pt-0 '>
+            <div className='w-full h-fit COLOR_BG_CREAM flex flex-col px-[5vw] innderDestinyCont opacity-100  max-sm:pt-[10vh] max-sm:pt-0 '>
                 <div className='w-full h-full px-[10vw] max-sm:px-3 pt-[10vw] max-sm:pb-[10vw] flex flex-col gap-[0.2rem]  '>
                     <div className='w-full h-fit flex justify-center T2T2T items-center'> <span className='Font_YV uppercase text-[1rem] COLOR_TEXT_RED font-semibold '>Kush and Sonal Story:</span></div>
                     {/* <img src={`/svgs/Title1Destiny.svg`} className='w-full T2T2T object-cover' alt="SVG" /> */}
