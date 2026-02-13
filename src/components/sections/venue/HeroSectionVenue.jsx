@@ -29,7 +29,7 @@ const HeroSectionVenue = () => {
    // PRE-PRE-ANIMATION
     useGSAP(()=>{
         gsap.to('.WEDMAIMTT2',{
-          delay:0.1,
+           delay: 0.9,
          y:0,
          duration:0.5,
         //  stagger:{

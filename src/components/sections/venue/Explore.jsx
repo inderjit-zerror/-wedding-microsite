@@ -318,7 +318,7 @@ const Explore = () => {
         if (!el) return
         gsap.to(el, {
             x: 50,
-            color: '#B97241',
+            color: '#551301',
             duration: 1,
             ease: 'power3.out'
         })
@@ -405,15 +405,15 @@ const Explore = () => {
                     </div>
 
                     {/* Marrakech 2 ------------------------------------------------  */}
-                    <div className='w-[50vw] mr-[10vw] h-screen flex justify-center items-center'>
+                    {/* <div className='w-[50vw] mr-[10vw] h-screen flex justify-center items-center'>
                         <div className='w-fit h-fit Marrakech2 flex flex-col gap-8'>
                             <p className=' uppercase Font_YV text-[#75171E]'>Explore Marrakech</p>
                             <img src={`/svgs/Text-Horizontal.svg`} alt="SVG" />
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* 4-Hover Part */}
-                    <div className='w-[60vw] h-screen  overflow-hidden flex justify-center items-center mr-[15vw]'>
+                    <div className='w-[60vw] h-screen  ml-[10vw]  overflow-hidden flex justify-center items-center mr-[5vw]'>
 
 
                         <div ref={MouseMoveHoverCont} className='w-full PHover4 h-fit flex flex-col relative'>
@@ -471,7 +471,7 @@ const Explore = () => {
                             <div className='w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6'>
                                 <div className='text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV'>All guests will be staying at the same resort where the wedding events are hosted, making it easy to relax and enjoy every moment without travel in between.</div>
                                 {/* BTN */}
-                                <button className="button " style={{ backgroundColor: '#B97241' }}>
+                                <button className="button " style={{ backgroundColor: '#551301' }}>
                                     <span className="button__icon-wrapper">
                                         <svg
                                             viewBox="0 0 14 15"
@@ -537,7 +537,7 @@ const Explore = () => {
                             <div className='w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6'>
                                 <div className='text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV'>All guests will be staying at the same resort where the wedding events are hosted, making it easy to relax and enjoy every moment without travel in between.</div>
                                 {/* BTN */}
-                                <button className="button " style={{ backgroundColor: '#B97241' }}>
+                                <button className="button " style={{ backgroundColor: '#551301' }}>
                                     <span className="button__icon-wrapper">
                                         <svg
                                             viewBox="0 0 14 15"
@@ -604,7 +604,7 @@ const Explore = () => {
                             <div className='w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6'>
                                 <div className='text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV'>All guests will be staying at the same resort where the wedding events are hosted, making it easy to relax and enjoy every moment without travel in between.</div>
                                 {/* BTN */}
-                                <button className="button " style={{ backgroundColor: '#B97241' }}>
+                                <button className="button " style={{ backgroundColor: '#551301' }}>
                                     <span className="button__icon-wrapper">
                                         <svg
                                             viewBox="0 0 14 15"
@@ -670,7 +670,7 @@ const Explore = () => {
                             <div className='w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6'>
                                 <div className='text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV'>All guests will be staying at the same resort where the wedding events are hosted, making it easy to relax and enjoy every moment without travel in between.</div>
                                 {/* BTN */}
-                                <button className="button " style={{ backgroundColor: '#B97241' }}>
+                                <button className="button " style={{ backgroundColor: '#551301' }}>
                                     <span className="button__icon-wrapper">
                                         <svg
                                             viewBox="0 0 14 15"
@@ -737,7 +737,7 @@ const Explore = () => {
                             <div className='w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6'>
                                 <div className='text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV'>All guests will be staying at the same resort where the wedding events are hosted, making it easy to relax and enjoy every moment without travel in between.</div>
                                 {/* BTN */}
-                                <button className="button " style={{ backgroundColor: '#B97241' }}>
+                                <button className="button " style={{ backgroundColor: '#551301' }}>
                                     <span className="button__icon-wrapper">
                                         <svg
                                             viewBox="0 0 14 15"

@@ -3,6 +3,7 @@ import "./globals.css";
 import LenisProvider from "@/components/common/LenisProvider";
 import Footer from "@/components/common/Footer";
 import NavBar from "@/components/common/NavBar";
+import Switch from "@/components/common/Switch";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +29,7 @@ export default function RootLayout({ children }) {
       >
         <LenisProvider>
           <NavBar />
-  
-
+          <Switch/>
           {children}
     
           <Footer />

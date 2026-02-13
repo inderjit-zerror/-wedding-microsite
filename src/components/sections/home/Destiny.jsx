@@ -43,18 +43,6 @@ const Destiny = () => {
 
     useGSAP(() => {
 
-        // gsap.from('.DCD1', {
-        //     yPercent: 20,
-        //     opacity: 0,
-        //     ease: 'none',
-        //     scrollTrigger: {
-        //         trigger: '.DCD1',
-        //         start: 'top 70%',
-        //         end: 'top 45%',
-        //         scrub: true,
-        //         // markers:true
-        //     }
-        // })
         gsap.from('.T2T2T', {
             yPercent: 20,
             opacity: 0,
@@ -176,15 +164,15 @@ const Destiny = () => {
                     </div>
                 </div>
 
-                <div className='w-full h-fit flex mt-[5vw] TT2T COLOR_TEXT_RED gap-[2rem]'>
+                <div className='w-full h-fit flex mt-[5vw]  COLOR_TEXT_RED gap-[2rem]'>
                     <div className='w-1/2  max-sm:w-full   text-justify max-sm:text-justify max-sm:pr-0'>
                         <p className='Font_YV'> It all began at a graduation party, where Sonal was busy charming the room when Kush walked in, caught one glimpse of her, and instantly knew he had to meet her. What followed was an unforgettable night filled with poker, laughter, and undeniable chemistry. They played their cards right (literally), won a little money, and unknowingly placed the biggest bet of all - on each other.
-                            <br></br>
+                            <br></br><br></br>
                             For a year, they stayed in touch, their connection never fading. Then fate stepped in. Sonal moved to New York City, and when Kush reached out, he discovered she was living just a ten minute walk from his apartment. Some call it destiny, some call it great real estate planning, but either way, their first date was pure magic. 
                         </p>
                     </div>
                     <div className='w-1/2  max-sm:hidden  '>
-                        <p className='Font_YV'> With no furniture in Sonal’s apartment yet, they sat on the floor, shared a bottle of wine, and talked for hours. It was simple, it was effortless, and it felt like home. Three amazing years later, Kush planned the ultimate surprise - a trip to Jamaica. Surrounded by turquoise waters and golden sunsets, he got down on one knee and asked Sonal to spend forever with him. <br></br>
+                        <p className='Font_YV'> With no furniture in Sonal’s apartment yet, they sat on the floor, shared a bottle of wine, and talked for hours. It was simple, it was effortless, and it felt like home. Three amazing years later, Kush planned the ultimate surprise - a trip to Jamaica. Surrounded by turquoise waters and golden sunsets, he got down on one knee and asked Sonal to spend forever with him.<br></br> <br></br>
                             And now, here we are, ready to celebrate our greatest adventure yet - our wedding. We can’t wait to share this special moment with all of you!
                         </p>
                     </div>
@@ -194,24 +182,22 @@ const Destiny = () => {
 
                 <div className='w-full h-fit flex max-sm:flex-col mt-[5vw] mb-[4vh] max-sm:mb-[8vh] gap-[5vw] relative  will-change-transform '>
 
-                    <div className='w-2/4 relative z-20 DCD1 max-sm:w-full '>
-                        <div className='w-full h-auto'>
-                            <img src={`/imgs/SonalKush1.webp`} className='w-full aspect-[2/3] object-cover object-center z-20 ' alt="IMG" />
+                    <div className='w-2/4 relative z-20 DCD1 max-sm:w-full overflow-hidden '>
+                        <div className='w-full h-auto  group'>
+                            <img src={`/imgs/SonalKush1.webp`} className='w-full aspect-[2/3] object-cover object-center z-20 transition-all duration-200 ease-in group-hover:scale-[1.02]  ' alt="IMG" loading="lazy" />
                         </div>
                     </div>
 
 
-                    <div className='w-full relative z-20 DCD2 mb-[10vh] max-sm:mb-0 '>
+                    <div className='w-full relative z-20 DCD2 mb-[10vh] max-sm:mb-0 overflow-hidden group '>
                         <div className='w-full h-auto'>
                             {/* aspect-[2/2] */}
-                            <img src={`/imgs/save1.webp`} className='w-full aspect-2/2  max-sm:aspect-auto object-cover object-center z-20 ' alt="IMG" />
+                            <img src={`/imgs/save1.webp`} className='w-full aspect-2/2  max-sm:aspect-auto object-cover transition-all duration-200 ease-in group-hover:scale-[1.02]  object-center z-20 ' alt="IMG" loading="lazy" />
                         </div>
                     </div>
 
 
-                    {/* <div className='w-full h-full absolute bottom-0  left-0 uppercase COLOR_TEXT_RED flex flex-wrap text-wrap z-10 '>
-                        <img src={`/svgs/BGTxtDestiny.svg`} alt="IMG" className='w-full h-full object-cover object-center ' />
-                    </div> */}
+                  
                 </div>
 
                 {/* ------------------------------------------------------------------------------------------------------------ */}
