@@ -77,10 +77,12 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useThree } from '@react-three/fiber'
 import { PerspectiveCamera, useTexture } from '@react-three/drei'
-import heroVertexH from '@/components/shader/heroVertexH.glsl'
-import heroFragmentH from '@/components/shader/heroFragmentH.glsl'
+// import heroVertexH from '@/components/shader/heroVertexH.glsl'
+// import heroFragmentH from '@/components/shader/heroFragmentH.glsl'
 import * as THREE from "three"
 import Customhome from './Customhome'
+import {vertex, fragment} from '@/components/shader/Heroshader'
+
 
 const Plane = () => {
     const { viewport, size } = useThree()
@@ -145,8 +147,8 @@ const Plane = () => {
             <shaderMaterial
                 ref={materialRef}
                 uniforms={uniforms.current}
-                vertexShader={heroVertexH}
-                fragmentShader={heroFragmentH}
+                vertexShader={vertex}
+                fragmentShader={fragment}
             />
         </mesh>
     )
