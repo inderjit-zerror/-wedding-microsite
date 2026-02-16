@@ -351,9 +351,9 @@ const Explore = () => {
                     </div>
 
                     {/* Part-2 Image -----------------------------------------------*/}
-                    <div className='w-[60vw] h-screen overflow-hidden HiIMG '>
+                    <div className='w-[60vw] h-screen overflow-hidden HiIMG group '>
 
-                        <Image src={`/imgs/h4.webp`} className='w-full h-full P2IDiv PLA opacity-0 object-cover object-center scale-[1.1]' width={2000} height={2000} alt='Img' />
+                        <Image src={`/imgs/h4.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15] P2IDiv PLA opacity-0 object-cover object-center scale-[1.1]' width={2000} height={2000} alt='Img' />
                     </div>
 
                     {/* 3Image-Container ------------------------------------------- */}
@@ -362,8 +362,8 @@ const Explore = () => {
                         {/* 1Cont-Image */}
                         <div className='w-fit h-fit flex gap-4 img1C img1 will-change-transform '>
                             {/* Img-cont */}
-                            <div className='w-[413px] aspect-[4/5]  overflow-hidden '>
-                                <Image src={`/imgs/h2.webp`} className='w-full   h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
+                            <div className='w-[413px] aspect-[4/5]  overflow-hidden group  '>
+                                <Image src={`/imgs/h2.webp`} className='w-full  transition-all duration-300 ease-in group-hover:scale-[1.15]   h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
                             </div>
                             {/* Text-Cont */}
                             <div className='w-fit full  flex flex-col justify-between Font_Q font-normal text-[#E4BD95]'>
@@ -378,8 +378,8 @@ const Explore = () => {
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex img2C img2 will-change-transform '>
                             {/* Img-cont */}
-                            <div className='w-[413px] aspect-[4/5]  overflow-hidden'>
-                                <Image src={`/imgs/h1.webp`} className='w-full  h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
+                            <div className='w-[413px] aspect-[4/5] group  overflow-hidden'>
+                                <Image src={`/imgs/h1.webp`} className='w-full transition-all duration-300 ease-in group-hover:scale-[1.15]  h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
                             </div>
                         </div>
 
@@ -395,8 +395,8 @@ const Explore = () => {
                                 </div>
                             </div>
                             {/* Img-cont */}
-                            <div className='w-[413px] aspect-[4/5]  overflow-hidden'>
-                                <Image src={`/imgs/h3.webp`} className='w-full   h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
+                            <div className='w-[413px] aspect-[4/5]  overflow-hidden group'>
+                                <Image src={`/imgs/h3.webp`} className='w-full transition-all duration-300 ease-in group-hover:scale-[1.15]  h-full object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
                             </div>
                         </div>
 
@@ -452,13 +452,13 @@ const Explore = () => {
 
                     </div>
 
-                    {/* 5-Cont */}
+                    5-Cont
                     <div className='w-fit ml-[15vw] h-screen flex  justify-center items-center'>
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>
                             {/* Img-cont */}
-                            <div className='w-[413px] aspect-[4/5]  overflow-hidden img5'>
-                                <Image src={`/imgs/h1.webp`} className='w-full h-full  object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
+                            <div className='w-[413px] aspect-[4/5] group  overflow-hidden img5'>
+                                <Image src={`/imgs/h1.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15] object-cover object-center scale-[1.2]' width={1000} height={1000} alt='Img' />
                             </div>
                         </div>
                     </div>
@@ -508,10 +508,10 @@ const Explore = () => {
                     {/* 7-Cont */}
                     <div className='w-fit h-screen mr-[2vw] flex justify-center items-center'>
                         {/* 2Cont-Image */}
-                        <div className='w-[413px] aspect-[4/5] flex overflow-hidden '>
+                        <div className='w-[413px] aspect-[4/5] flex overflow-hidden group  '>
                             {/* Img-cont */}
                             {/* <div className='w-[90%] h-[90vh]  overflow-hidden img6'> */}
-                            <Image src={`/imgs/h2.webp`} className='w-full h-full object-cover  object-center' width={1000} height={1000} alt='Img' />
+                            <Image src={`/imgs/h2.webp`} className='w-full h-full object-cover transition-all duration-300 ease-in group-hover:scale-[1.15]  object-center' width={1000} height={1000} alt='Img' />
                             {/* </div> */}
                         </div>
                     </div>
@@ -523,8 +523,8 @@ const Explore = () => {
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>
                             {/* Img-cont */}
-                            <div className='w-[50vw] h-screen  overflow-hidden img5'>
-                                <Image src={`/imgs/h3.webp`} className='w-full h-full  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
+                            <div className='w-[50vw] h-screen  overflow-hidden group  img5'>
+                                <Image src={`/imgs/h3.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15]  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
                             </div>
                         </div>
                     </div>
@@ -574,10 +574,10 @@ const Explore = () => {
                     {/* 7-Cont */}
                     <div className='w-fit h-screen mr-[2vw] flex justify-center items-center'>
                         {/* 2Cont-Image */}
-                        <div className='w-[413px] aspect-[4/5] flex overflow-hidden '>
+                        <div className='w-[413px] aspect-[4/5] group flex overflow-hidden '>
                             {/* Img-cont */}
                             {/* <div className='w-[90%] h-[90vh]  overflow-hidden img6'> */}
-                            <Image src={`/imgs/h4.webp`} className='w-full h-full object-cover  object-center' width={1000} height={1000} alt='Img' />
+                            <Image src={`/imgs/h4.webp`} className='w-full h-full object-cover transition-all duration-300 ease-in group-hover:scale-[1.15]  object-center' width={1000} height={1000} alt='Img' />
                             {/* </div> */}
                         </div>
                     </div>
@@ -590,8 +590,8 @@ const Explore = () => {
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>
                             {/* Img-cont */}
-                            <div className='w-[50vw] h-fit  overflow-hidden img5'>
-                                <Image src={`/imgs/h5.webp`} className='w-full h-full  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
+                            <div className='w-[50vw] h-fit  overflow-hidden group img5'>
+                                <Image src={`/imgs/h5.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15]  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
                             </div>
                         </div>
                     </div>
@@ -641,10 +641,10 @@ const Explore = () => {
                     {/* 7-Cont */}
                     <div className='w-fit h-screen mr-[2vw] flex justify-center items-center'>
                         {/* 2Cont-Image */}
-                        <div className='w-[70vw] h-screen flex overflow-hidden '>
+                        <div className='w-[70vw] h-screen flex overflow-hidden group '>
                             {/* Img-cont */}
                             {/* <div className='w-[90%] h-[90vh]  overflow-hidden img6'> */}
-                            <Image src={`/imgs/h6.webp`} className='w-full h-full object-cover  object-center' width={2000} height={2000} alt='Img' />
+                            <Image src={`/imgs/h6.webp`} className='w-full h-full object-cover transition-all duration-300 ease-in group-hover:scale-[1.15]  object-center' width={2000} height={2000} alt='Img' />
                             {/* </div> */}
                         </div>
                     </div>
@@ -656,8 +656,8 @@ const Explore = () => {
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>
                             {/* Img-cont */}
-                            <div className='w-[50vw] h-screen  overflow-hidden img5'>
-                                <Image src={`/imgs/h7.webp`} className='w-full h-full  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
+                            <div className='w-[50vw] h-screen  overflow-hidden img5 group'>
+                                <Image src={`/imgs/h7.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15]  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
                             </div>
                         </div>
                     </div>
@@ -707,10 +707,10 @@ const Explore = () => {
                     {/* 7-Cont */}
                     <div className='w-fit h-screen mr-[2vw] flex justify-center items-center'>
                         {/* 2Cont-Image */}
-                        <div className='w-[413px] aspect-[4/5] flex overflow-hidden '>
+                        <div className='w-[413px] aspect-[4/5] flex overflow-hidden group '>
                             {/* Img-cont */}
                             {/* <div className='w-[90%] h-[90vh]  overflow-hidden img6'> */}
-                            <Image src={`/imgs/h1.webp`} className='w-full h-full object-cover  object-center' width={1000} height={1000} alt='Img' />
+                            <Image src={`/imgs/h1.webp`} className='w-full h-full object-cover transition-all duration-300 ease-in group-hover:scale-[1.15]  object-center' width={1000} height={1000} alt='Img' />
                             {/* </div> */}
                         </div>
                     </div>
@@ -719,12 +719,12 @@ const Explore = () => {
                     {/* ///////////////////////////////////////////////////////////////////////////////////////// PART - 5 */}
 
                     {/* 5-Cont */}
-                    <div className='w-fit ml-[15vw] h-screen flex  justify-center items-center'>
+                    <div className='w-fit ml-[15vw] h-screen flex  justify-center  items-center'>
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>
                             {/* Img-cont */}
-                            <div className='w-[50vw] h-fit  overflow-hidden img5'>
-                                <Image src={`/imgs/h4.webp`} className='w-full h-full  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
+                            <div className='w-[50vw] h-fit  overflow-hidden group img5'>
+                                <Image src={`/imgs/h4.webp`} className='w-full h-full transition-all duration-300 ease-in group-hover:scale-[1.15]  object-cover object-center scale-[1.2]' width={2000} height={2000} alt='Img' />
                             </div>
                         </div>
                     </div>
@@ -774,13 +774,16 @@ const Explore = () => {
                     {/* 7-Cont */}
                     <div className='w-fit h-screen mr-[2vw] flex justify-center items-center'>
                         {/* 2Cont-Image */}
-                        <div className='w-[70vw] h-screen flex overflow-hidden '>
+                        <div className='w-[70vw] h-screen flex overflow-hidden group '>
                             {/* Img-cont */}
                             {/* <div className='w-[90%] h-[90vh]  overflow-hidden img6'> */}
-                            <Image src={`/imgs/h2.webp`} className='w-full h-full object-cover  object-center' width={2000} height={2000} alt='Img' />
+                            <Image src={`/imgs/h2.webp`} className='w-full h-full object-cover transition-all duration-300 ease-in group-hover:scale-[1.1]  object-center' width={2000} height={2000} alt='Img' />
                             {/* </div> */}
                         </div>
                     </div>
+
+                   
+
 
                 </div>
             </div>

@@ -1,14 +1,5 @@
-"use client";
-// import Image from "next/image";
-// import React, { useRef } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useGSAP } from "@gsap/react";
-
-// gsap.registerPlugin(ScrollTrigger);
-
-
-
+// ------------------------------------------------------------------------- NEW ----------------------------------------------------------
+'use client'
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useThree } from '@react-three/fiber'
@@ -74,6 +65,7 @@ const Customhome = () => {
         },'c4')
         ct.to('.PRETEXTXONTHOME',{
             top:'40%',
+
             scale:0.6,
             duration:0.2,
             ease:'power3.out',
@@ -90,7 +82,8 @@ const Customhome = () => {
             ease:'power1.inOut',
         },'c4')
         ct.to('.PRETEXTXONTHOME',{
-            top:'15%',
+            top:'30%',
+            left:'5%',
             delay:1,
             scale:1,
             duration:0.7,
@@ -115,10 +108,10 @@ const Customhome = () => {
         <div className='w-[20px] h-full le2 COLOR_BG_RED rounded-[5px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
 
         {/* Sonal& Kush */}
-        <div className=' uppercase flex text-[5vw] pb-[2rem] PRETEXTXONTHOME absolute top-[15%] leading-[9vw]  overflow-hidden COLOR_TEXT_CREAM z-[100] Font_Q gap-4'>
-            <span className=' flex textPre_Triger opacity-0 translate-y-[0%]'>raffles</span>
-            {/* <span className=' flex textPre_Triger opacity-0 translate-y-[100%]'>&</span> */}
-            <span className=' flex textPre_Triger opacity-0 translate-y-[0%]'>udaipur</span>
+        <div className='  flex flex-col text-[5vw] pb-[2rem] PRETEXTXONTHOME absolute top-[80%] leading-[6vw]  overflow-hidden COLOR_TEXT_CREAM z-[100] Font_Q '>
+            <span className='Font_YIV capitalize flex textPre_Triger opacity-0 translate-y-[0%]'>The</span>
+            <span className='Font_Q uppercase flex textPre_Triger opacity-0 translate-y-[0%]'>Wedding</span>
+            <span className='Font_Q uppercase flex textPre_Triger opacity-0 translate-y-[0%]'>ITINERARY.</span>
         </div>
       </div>
     </div>
@@ -198,108 +191,31 @@ const Plane = ({srcimg}) => {
         </mesh>
     )
 }
+const HeroWedding = ({srcimg}) => {
+    const distance = 200;
+    const [fov, setFov] = useState(75);
 
+    useEffect(() => {
+        const FovCalc = () => {
+            setFov(2 * Math.atan(window.innerHeight / (2 * distance)) * (180 / Math.PI))
+        }
+        FovCalc()
+        window.addEventListener('resize', FovCalc);
+        return () => window.removeEventListener('resize', FovCalc)
+    }, [])
 
-
-
-const WeddingHome = ({srcimg}) => {
-  // const WcontainerRef = useRef(null)
-  // const WimageRef = useRef(null)
-
-  useGSAP(() => {
-    gsap.to(`.NN`, {
-      height: "100vh",
-      width: "100%",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".nk",
-        start: "top top",
-        end: "top -10%",
-        scrub: true,
-        // markers:true
-      },
-    });
-    gsap.to(`.nk`, {
-      padding: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".nk",
-        start: "top top",
-        end: "top -10%",
-        scrub: true,
-        // markers:true
-      },
-    });
-  }, []);
-
-  // PRE-PRE-ANIMATION
-  useGSAP(() => {
-    gsap.to(".WEDMAIM", {
-      delay: 0.8,
-      y: 0,
-      duration: 1,
-      //  stagger:{
-      //     each:'0.2',
-      //     ease:'none'
-      //  },
-      ease: "power-in",
-    });
-  }, []);
-
-
-  // ==================================================
-   const distance = 200;
-      const [fov, setFov] = useState(75);
-  
-      useEffect(() => {
-          const FovCalc = () => {
-              setFov(2 * Math.atan(window.innerHeight / (2 * distance)) * (180 / Math.PI))
-          }
-          FovCalc()
-          window.addEventListener('resize', FovCalc);
-          return () => window.removeEventListener('resize', FovCalc)
-      }, [])
-  
-  // ==================================================
-
-  return (
-    <div className="w-full  h-screen fixed top-0 left-0 nk flex justify-center items-end  px-4 z-[-1] COLOR_BG_CREAM ">
-      <div className="w-[99.5%] NN h-[85vh] overflow-hidden flex relative  ">
-        {/* <img
-
-          src={`/imgs/save3.webp`}
-          className="w-full h-full object-cover object-[50%_18%]"
-          alt="Img"
-        /> */}
-
-        <div className="w-full h-screen relative">
-          <Customhome />
-          <Canvas className="w-full h-screen">
-            <PerspectiveCamera
-              makeDefault
-              fov={fov}
-              position={[0, 0, distance]}
-            />
-            <Plane srcimg={srcimg} />
-          </Canvas>
+    return (
+        <div className='w-full h-screen fixed top-0 left-0 '>
+            <Customhome/>
+            <Canvas className='w-full h-screen'>
+                <PerspectiveCamera makeDefault fov={fov} position={[0, 0, distance]} />
+                <Plane  srcimg={srcimg} />
+            </Canvas>
         </div>
+    )
+}
 
 
-      </div>
-      {/* <img  src={`/svgs/WDText.svg`} alt="IMG" className=" absolute object-cover object-center w-1/3 max-sm:w-2/3 top-1/2 max-sm:top-1/5 left-1/2 -translate-x-1/2 -translate-y-1/2" /> */}
-      <div className="w-fit flex flex-col absolute bottom-0 max-sm:bottom-[0%]  left-[4%] max-sm:left-1/2 max-sm:-translate-x-1/2  -translate-y-1/2 COLOR_TEXT_CREAM">
-        <h1 className="Font_YIV text-[7rem] translate-y-10 leading-[8rem] max-sm:translate-y-5 max-sm:text-[15vw] max-sm:leading-[16vw] overflow-hidden">
-          <span className=" flex translate-y-100 WEDMAIM">The</span>
-        </h1>
-        <h1 className="Font_Q text-[7rem] leading-[8rem] max-sm:text-[15vw] max-sm:leading-[16vw] uppercase overflow-hidden">
-          <span className=" flex translate-y-100 WEDMAIM">Wedding</span>
-        </h1>
-        <h1 className="Font_Q text-[7rem] leading-[8rem] max-sm:text-[15vw] max-sm:leading-[16vw] uppercase overflow-hidden">
-          <span className=" flex translate-y-100 WEDMAIM">ITINERARY.</span>
-        </h1>
-      </div>
-    </div>
-  );
-};
 
-export default WeddingHome;
+export default HeroWedding
+

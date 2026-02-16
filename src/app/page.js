@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <HomeHeroSection />
+      <HomeHeroSection srcimg={'/imgs/SonalKush3.webp'} />
       <WeddingHero />
       <Line/>
       <Countdown/>
