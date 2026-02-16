@@ -11,11 +11,9 @@ const venue = () => {
     return (
         <>
             <HeroVenveSection srcimg={`/imgs/RafflesUdaipur.webp`} />
-            {/* <HeroSectionVenue /> */}
             <WeddingVenue />
             <VenueGallery />
             <TravelInfo />
-            {/* <RSVP/> */}
         </>
     )
 }
