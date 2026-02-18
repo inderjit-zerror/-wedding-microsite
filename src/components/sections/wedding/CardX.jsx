@@ -780,11 +780,7 @@ useEffect(() => {
             <p className=" Font_YV mt-6 leading-relaxed max-w-md text-center mx-auto">
               Candlelight, old-world beauty, and a night made to celebrate. Come toast to love in a reception filled with warmth, rhythm, and refined revelry.
             </p>
-            {/* <p className=" Font_YV mt-2 leading-relaxed max-w-md text-center mx-auto">
-              Steeped in tradition and splashed with sunshine. Come celebrate our haldi with lively music, dancing, and happy moments.
-            </p> */}
-
-            {/* <span className='Text_YV font-semibold py-4 text-[14px] capitalize'>( no white red & gold )</span> */}
+           
 
           </div>
 

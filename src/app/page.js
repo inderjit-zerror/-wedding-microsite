@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import RSVP from "@/components/common/RSVP";
 import Countdown from "@/components/sections/home/Countdown";
 import Destiny from "@/components/sections/home/Destiny";
