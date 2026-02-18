@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
 import { useGSAP } from '@gsap/react'
-import RSVP from '@/components/common/RSVP'
+
 gsap.registerPlugin(ScrollTrigger)
 
 const Explore = () => {
@@ -27,13 +27,13 @@ const Explore = () => {
 
     // Pre Load Animation
     useGSAP(() => {
-        gsap.set('.PLA', {
-            autoAlpha: 0,
-            y: 20,
-        })
+        // gsap.set('.PLA', {
+        //     autoAlpha: 0,
+        //     y: 20,
+        // })
 
         gsap.from('.HiIMG', {
-            xPercent: 20,
+            // xPercent: 20,
             opacity: 0,
             duration: 0.8,
             ease: 'none'
@@ -41,11 +41,11 @@ const Explore = () => {
 
         gsap.to('.PLA', {
             autoAlpha: 1,
-            y: 0,
-            duration: 1.2,
+            // y: 0,
+            duration: 1,
             stagger: 0.12,
-            ease: 'power3.out',
-            delay: 0.2, // lets layout + pin settle
+            ease: 'ease',
+            // delay: 0.2, // lets layout + pin settle
         })
     }, { scope: mainContainer })
 
@@ -339,7 +339,7 @@ const Explore = () => {
 
         <>
 
-            <div ref={mainContainer} className='w-full h-screen overflow-x-hidden flex relative COLOR_BG_CREAM'>
+            <div ref={mainContainer} className='w-full h-screen overflow-hidden flex relative COLOR_BG_CREAM'>
                 <div ref={scrollContainer} className='w-fit h-screen flex fixed overflow-hidden top-0 left-0'>
 
                     {/* Marrakech ------------------------------------------------  */}
@@ -452,7 +452,7 @@ const Explore = () => {
 
                     </div>
 
-                    5-Cont
+                    {/* 5-Cont */}
                     <div className='w-fit ml-[15vw] h-screen flex  justify-center items-center'>
                         {/* 2Cont-Image */}
                         <div className='w-fit h-fit flex  '>

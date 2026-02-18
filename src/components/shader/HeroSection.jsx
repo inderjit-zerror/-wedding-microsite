@@ -8,7 +8,7 @@ void main() {
 
   gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
 }
-`
+`;
 export const fragment = `
 precision mediump float;
 
@@ -74,4 +74,4 @@ void main() {
     gl_FragColor = color;
 }
 
-`
+`;

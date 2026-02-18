@@ -117,7 +117,7 @@
 //         {/* Right */}
 //         <div className='w-1/2 max-sm:w-full max-sm:h-fit min-h-screen COLOR_BG_CREAM relative top-0 ml-auto'>
 //           {/* Day Sticky */}
-//           <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 '>
+//           <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-100 '>
 //             <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 2</h2>
 //           </div>
 
@@ -257,7 +257,7 @@
 //         {/* left */}
 //         <div className='w-1/2 min-h-screen max-sm:w-full  COLOR_BG_CREAM relative z-50 top-0 mr-auto'>
 //           {/* Day Sticky */}
-//           <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 '>
+//           <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-100 '>
 //             <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 3</h2>
 //           </div>
 
@@ -496,7 +496,7 @@ useEffect(() => {
   }, [])
 
   return (
-    <div className="w-full h-fit flex flex-col z-20 mt-[150vh]">
+    <div className="w-full h-fit flex flex-col z-100 mt-[150vh] ">
       {/* div-1 Sangeet */}
       <div className="w-full min-h-screen flex  max-sm:flex-col-reverse">
         {/* Left */}
@@ -566,7 +566,7 @@ useEffect(() => {
         {/* Right */}
         <div className='w-1/2 max-sm:w-full max-sm:h-fit min-h-screen COLOR_BG_CREAM relative top-0 ml-auto'>
           {/* Day Sticky */}
-          <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 '>
+          <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-100 '>
             <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 2</h2>
           </div>
 
@@ -706,7 +706,7 @@ useEffect(() => {
         {/* left */}
         <div className='w-1/2 min-h-screen max-sm:w-full  COLOR_BG_CREAM relative z-50 top-0 mr-auto'>
           {/* Day Sticky */}
-          <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 '>
+          <div className='w-full h-fit sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-100 '>
             <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 3</h2>
           </div>
 

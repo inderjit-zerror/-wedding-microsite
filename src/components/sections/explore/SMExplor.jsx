@@ -63,52 +63,52 @@ const SMExplor = () => {
       </div>
 
       {/* 2 */}
-      <div className="w-full h-fit flex flex-col justify-center items-center mt-[4vh] bg-[#395238]">
+      <div className="w-full h-fit flex flex-col justify-center items-center mt-[4vh] COLOR_BG_RED">
         <img
           className="w-full aspect-2/3 object-cover object-center"
           src={`/imgs/venue/horizontal_section/img5.webp`}
           alt="IMG"
         />
-        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] text-[#E4BD95]">
+        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] COLOR_TEXT_CREAM">
           <h2 className="Font_Q">01</h2>
           <p className="FontYV">Outdoor Ceremony Area</p>
         </div>
       </div>
 
       {/* 3 */}
-      <div className="w-full h-fit flex px-[20px] flex-col justify-center items-center pt-[4vh] bg-[#395238]">
+      <div className="w-full h-fit flex px-[20px] flex-col justify-center items-center pt-[4vh] COLOR_BG_RED">
         <img
           className="w-full aspect-2/2 object-cover object-center"
           src={`/imgs/venue/horizontal_section/img2.webp`}
           alt="IMG"
         />
-        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] text-[#E4BD95]">
+        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] COLOR_TEXT_CREAM">
           <h2 className="Font_Q">02</h2>
           <p className="FontYV">Outdoor Ceremony Area</p>
         </div>
       </div>
 
       {/* 3 */}
-      <div className="w-full h-fit flex flex-col justify-center items-center pt-[4vh] bg-[#395238]">
+      <div className="w-full h-fit flex flex-col justify-center items-center pt-[4vh] COLOR_BG_RED">
         <img
           className="w-full aspect-2/3 object-cover object-center"
           src={`/imgs/venue/horizontal_section/img3.webp`}
           alt="IMG"
         />
-        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] text-[#E4BD95]">
+        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] COLOR_TEXT_CREAM">
           <h2 className="Font_Q">03</h2>
           <p className="FontYV">Outdoor Ceremony Area</p>
         </div>
       </div>
 
       {/* 4 */}
-      <div className="w-full h-fit flex px-[20px] flex-col justify-center items-center py-[4vh] bg-[#395238]">
+      <div className="w-full h-fit flex px-[20px] flex-col justify-center items-center py-[4vh] COLOR_BG_RED">
         <img
           className="w-full aspect-2/2 object-cover object-center"
           src={`/imgs/venue/horizontal_section/img6.webp`}
           alt="IMG"
         />
-        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] text-[#E4BD95]">
+        <div className="px-[20px] flex  w-full justify-between items-center py-[4vw] COLOR_TEXT_CREAM">
           <h2 className="Font_Q">04</h2>
           <p className="FontYV">Outdoor Ceremony Area</p>
         </div>
@@ -124,9 +124,9 @@ const SMExplor = () => {
       </div>
 
       {/* 6 */}
-      <div className="max-w-xl mx-auto bg-white mt-[4vh]">
+      <div className="max-w-xl mx-auto COLOR_BG_CREAM mt-[4vh] COLOR_TEXT_RED">
         {places.map((item, index) => (
-          <div key={item.id} className="border-b border-gray-200">
+          <div key={item.id} className="">
             <button
               onClick={() => handleClick(item.id)}
               className="w-full flex items-center justify-between py-4 text-left"
@@ -137,7 +137,7 @@ const SMExplor = () => {
                 </span>
                 <span className={`text-lg Font_Q `}>{item.title}</span>
               </div>
-              <span className="text-xl">
+              <span className="text-xl COLOR_TEXT_RED">
                 {activeId === item.id ? "−" : "+"}
               </span>
             </button>

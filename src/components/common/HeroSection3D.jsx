@@ -1,21 +1,18 @@
-// ------------------------------------------------------------------------- NEW ----------------------------------------------------------
 'use client'
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useThree } from '@react-three/fiber'
 import { PerspectiveCamera, useTexture } from '@react-three/drei'
-// import heroVertexH from '@/components/shader/heroVertexH.glsl'
-// import heroFragmentH from '@/components/shader/heroFragmentH.glsl'
+import {vertex, fragment} from '@/components/shader/HeroSection'
 import * as THREE from "three"
-import Customhome from './Customhome'
-import {vertex, fragment} from '@/components/shader/Heroshader'
+import { usePathname } from "next/navigation";
 
 
-const Plane = ({srcimg}) => {
+
+const Plane = ({srcURL}) => {
     const { viewport, size } = useThree()
-    const texture = useTexture(srcimg)
+    const texture = useTexture(srcURL)
     const materialRef = useRef()
-
     const mouse = useRef(new THREE.Vector2(0.5, 0.5))
     const prevMouse = useRef(new THREE.Vector2(0.5, 0.5))
     const velocity = useRef(0)
@@ -39,18 +36,14 @@ const Plane = ({srcimg}) => {
 
     useFrame((state, delta) => {
         if (!materialRef.current) return
-
         const dist = mouse.current.distanceTo(prevMouse.current)
         const smoothFactor = 1.0 - Math.exp(-8 * delta)
         const targetVelocity = dist * 5.0
-
         velocity.current += (targetVelocity - velocity.current) * smoothFactor
         velocity.current *= 0.95
-
         materialRef.current.uniforms.uVelocity.value = velocity.current
         materialRef.current.uniforms.uActive.value +=
             (active.current - materialRef.current.uniforms.uActive.value) * 0.08
-
         prevMouse.current.lerp(mouse.current, 0.12)
     })
 
@@ -80,9 +73,12 @@ const Plane = ({srcimg}) => {
         </mesh>
     )
 }
-const HomeHeroSection = ({srcimg}) => {
+
+const HeroSection3D = ({srcURL}) => {
     const distance = 200;
     const [fov, setFov] = useState(75);
+    const pathname = usePathname();
+    const slug = pathname.split("/").filter(Boolean)[0];
 
     useEffect(() => {
         const FovCalc = () => {
@@ -94,11 +90,11 @@ const HomeHeroSection = ({srcimg}) => {
     }, [])
 
     return (
-        <div className='w-full h-screen relative'>
-            <Customhome/>
+        
+        <div className='w-full h-screen relative '>
             <Canvas className='w-full h-screen'>
                 <PerspectiveCamera makeDefault fov={fov} position={[0, 0, distance]} />
-                <Plane  srcimg={srcimg} />
+                <Plane srcURL={srcURL} />
             </Canvas>
         </div>
     )
@@ -106,5 +102,5 @@ const HomeHeroSection = ({srcimg}) => {
 
 
 
-export default HomeHeroSection
+export default HeroSection3D
 
